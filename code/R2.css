@@ -1,0 +1,82 @@
+.par{
+    background-color: #d4d4d4;
+}
+@media only screen and (min-width: 760px){
+    td, th{
+        font-size: 1.2rem;
+    }
+    .container-table{
+        /* background-color: crimson; */
+        display: flex;
+        justify-content: center;
+    }
+    table{
+        border-collapse: collapse;
+        width: 90%;
+    }
+    td{
+        border: 1px solid #040404;
+    }
+    
+    th{
+        border: 1px solid #040404;
+        /* box-shadow: 1px 1px 1px 1px; */
+    }
+    tbody{
+        overflow: auto;
+    }
+    thead{
+        background-color: #b4b4b4;
+    }
+}
+@media only screen and (max-width: 480px)  {
+    td, th{
+        font-size: 1rem !important;
+    }
+}
+@media only screen and (max-width: 760px)  {
+    td, th{
+        font-size: 1.5rem;
+    }
+    tr{
+        border: 2px solid #040404;
+    }
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+    
+    /* no mostramos las celdas de cabecera */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    /* agregamos un margen al pie para cada conjunto */
+    tr {
+      margin: 0 0 1rem 0;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #040404;
+        position: relative;
+        padding-left: 50%;
+        /* background-color: cornflowerblue; */
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    /* agregamos descripcion para cada fila(titulo de las celdas de cabecera) */
+    td:nth-of-type(1):before { content: "Lorem, ipsum."; }
+    td:nth-of-type(2):before { content: "Repellendus, corporis!"; }
+    td:nth-of-type(3):before { content: "Alias, atque?"; }
+    td:nth-of-type(4):before { content: "Magni, quaerat."; }
+    td:nth-of-type(5):before { content: "Pariatur, sequi?"; }
+    td:nth-of-type(6):before { content: "Animi, corrupti?"; }
+}

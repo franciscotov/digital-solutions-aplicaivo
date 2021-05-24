@@ -1,107 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- definimos la codificación de caracteres -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadimos una breve descripción -->
+    <meta name="description" content="Este es un aplicativo para la visualizacion de una tabla de datos,
+    la app web es responsive"/>
+    <!-- definimos palabras claves para las busquedas-->
+    <meta name="keywords" content="video, responsive, aplicativo"/>
+    <!-- esta app no es de uso público, aunque definimos copyright -->
+    <meta name="author" content="Francisco Tovar" />
+    <meta name="copyright" content="Esta aplicación pertenece a DS" />
+    <!-- titulo para la pag -->
     <title>Aplicativo-DS-R2</title>
+    <link rel="stylesheet" type="text/css" href="R2.css" media="screen" />
 </head>
 <body>
     <div class="container-table">
         <table class="default">
             <!-- tr>(th>{columna #$})*6 -->
-            tr>(th>{columna #$})*6
-            <!-- (tr>(td>lorem2)*6)*10 -->
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Inventore, quia!</td>
-                <td>Magnam, similique?</td>
-                <td>Magnam, odit.</td>
-                <td>Minima, exercitationem!</td>
-                <td>Dolore, eius.</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Nam, iste.</td>
-                <td>Vel, nulla!</td>
-                <td>Eum, culpa!</td>
-                <td>Error, animi.</td>
-                <td>Aperiam, iste.</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Voluptate, labore?</td>
-                <td>Nobis, autem.</td>
-                <td>Ut, quibusdam!</td>
-                <td>Fugit, repellendus?</td>
-                <td>Ducimus, magni?</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Quam, natus.</td>
-                <td>Eos, possimus.</td>
-                <td>Ipsum, sunt.</td>
-                <td>Eligendi, ex?</td>
-                <td>Delectus, magni!</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Quibusdam, deleniti.</td>
-                <td>Alias, ex.</td>
-                <td>Autem, modi!</td>
-                <td>Nobis, exercitationem.</td>
-                <td>Corporis, dolore.</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Consectetur, expedita.</td>
-                <td>Illum, incidunt!</td>
-                <td>Officia, dolorem.</td>
-                <td>Architecto, minus.</td>
-                <td>Quibusdam, fuga.</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Ipsa, ea.</td>
-                <td>Eaque, blanditiis?</td>
-                <td>Asperiores, doloremque.</td>
-                <td>Amet, cupiditate?</td>
-                <td>Rem, perspiciatis!</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Eius, minus.</td>
-                <td>Placeat, quod?</td>
-                <td>Facere, earum.</td>
-                <td>Laboriosam, maxime.</td>
-                <td>Enim, expedita?</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Ab, numquam!</td>
-                <td>Nemo, illo?</td>
-                <td>Officia, atque?</td>
-                <td>Dignissimos, odit?</td>
-                <td>Modi, id.</td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Ipsam, nemo!</td>
-                <td>Consequuntur, pariatur!</td>
-                <td>Provident, eveniet?</td>
-                <td>Libero, aspernatur.</td>
-                <td>Minus, accusantium?</td>
-            </tr>
-            <tr>
-                <td>celda 1</td>
-                <td>delda 2</td>
-            </tr>
-            <tr>
-                <td>celda 1.1</td>
-                <td>delda 2.1</td>
-            </tr>
+            <!-- tr>(th>{columna #$})*6 -->
+            <!-- (tr>tbody>(td>lorem2)*6)*10 -->
+            <!-- celdas declaradas como cabecera -->
+            <thead>
+                <tr >
+                    <th>Lorem, ipsum.</th>
+                    <th>Repellendus, corporis!</th>
+                    <th>Alias, atque?</th>
+                    <th>Magni, quaerat.</th>
+                    <th>Pariatur, sequi?</th>
+                    <th>Animi, corrupti?</th>
+                </tr>
+            </thead>
+            <tbody class="par">
+                <tr role="row">
+                    <td>Lorem, ipsum.</td>
+                    <td>Ad, excepturi!</td>
+                    <td>Voluptas, quas!</td>
+                    <td>Error, ullam!</td>
+                    <td>Est, veniam.</td>
+                    <td>Voluptatem, dicta!</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr role="row">
+                    <td>Lorem, ipsum.</td>
+                    <td>Asperiores, qui.</td>
+                    <td>Quaerat, eos.</td>
+                    <td>Voluptates, magnam.</td>
+                    <td>Ducimus, molestias.</td>
+                    <td>Culpa, dolorem!</td>
+                </tr>
+            </tbody>
+            <tbody class="par">
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Magni, facere.</td>
+                    <td>Dolor, natus!</td>
+                    <td>Deleniti, id.</td>
+                    <td>Pariatur, veniam.</td>
+                    <td>Architecto, facilis.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Eius, modi.</td>
+                    <td>Vel, blanditiis?</td>
+                    <td>Nemo, consequatur?</td>
+                    <td>Atque, cupiditate.</td>
+                    <td>Deserunt, porro?</td>
+                </tr>
+            </tbody>
+            <tbody class="par">
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Vel, officiis!</td>
+                    <td>Tempore, dicta!</td>
+                    <td>Sint, quisquam.</td>
+                    <td>Veniam, nam?</td>
+                    <td>Repellendus, quasi.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Recusandae, dolores.</td>
+                    <td>Nesciunt, iure!</td>
+                    <td>Ratione, placeat?</td>
+                    <td>Praesentium, reiciendis.</td>
+                    <td>Earum, voluptatum!</td>
+                </tr>
+            </tbody>
+            <tbody class="par">
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sequi, iste.</td>
+                    <td>Eveniet, fuga.</td>
+                    <td>Obcaecati, fugit.</td>
+                    <td>Nisi, enim?</td>
+                    <td>Nesciunt, voluptatibus?</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Esse, laboriosam.</td>
+                    <td>Eos, quaerat?</td>
+                    <td>Autem, quas.</td>
+                    <td>Exercitationem, ipsa?</td>
+                    <td>Dicta, ea!</td>
+                </tr>
+            </tbody>
+            <tbody class="par">
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Molestiae, debitis!</td>
+                    <td>Veniam, eius.</td>
+                    <td>Temporibus, minima.</td>
+                    <td>Consequuntur, tempore.</td>
+                    <td>Et, itaque.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Beatae, adipisci?</td>
+                    <td>Tempore, hic.</td>
+                    <td>Aliquam, excepturi!</td>
+                    <td>Totam, temporibus.</td>
+                    <td>Modi, aliquid!</td>
+                </tr>
+            </tbody>
         </table>
-
     </div>
 </body>
 </html>
