@@ -38,16 +38,19 @@ $(document).ready(function() {
                 text =  `Buscaste la cuidad con el nombre: ${data?.location?.name}`;
                 table= $("<table></table>");
                 let trHead = $("<tr></tr>"), trBody = $("<tr></tr>");
-                // iteramos por todas las propiedades del objeto data que nos interesan
+                // iteramos por todas las propiedades del objeto data, creando una tabla con definidas
+                // en la lista dataList
                 [...Object.entries(data.location), ...Object.entries(data.current)].map((ele, i) =>{
                     if(dataList.includes(ele[0])) {
-                        trHead.append(`<th>${ele[0]}<th>`);
+                        trHead.append(`<th>${ele[0].toUpperCase()}<th>`);
                         trBody.append(`<td>${ele[1]}<td>`);
                     }
                 });
                 // insertamos tanto las celdas de cabecera como las del body
-                table.append(trHead);
-                table.append(trBody);
+                // table.append(trHead);
+                table.append($(`<thead></thead>`).append(trHead));
+                // table.append(trBody)
+                table.append($(`<tbody></tbody>`).append(trBody));
             }
             else {
                 // texto pde aviso para ciudad incorrecta
